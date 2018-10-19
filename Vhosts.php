@@ -15,7 +15,7 @@ $vhbody = null;
 $text = null;
 
 foreach ($vhosts as $line) {
-	// process comments outside the virtual host
+	// process comments outside the virtual host record
 	if (preg_match('/^[\s]{0,}#/', $line) && !$isvh){
 		$v[] = array('c', $line);
 	}
